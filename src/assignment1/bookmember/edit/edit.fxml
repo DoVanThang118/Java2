@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment1.bookmember.edit.Controller">
+   <children>
+      <Button layoutX="26.0" layoutY="22.0" mnemonicParsing="false" onAction="#backToList" text="&lt;&lt; Back to List" />
+      <TextField fx:id="txtCode" layoutX="67.0" layoutY="87.0" prefHeight="38.0" prefWidth="466.0" promptText="Code" />
+      <TextField fx:id="txtName" layoutX="67.0" layoutY="147.0" prefHeight="38.0" prefWidth="466.0" promptText="Name" />
+      <TextField fx:id="txtHours" layoutX="67.0" layoutY="211.0" prefHeight="38.0" prefWidth="466.0" promptText="Hours" />
+      <Button layoutX="475.0" layoutY="278.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="65.0" text="Update" />
+      <Text fx:id="errors" fill="#ff0202" layoutX="67.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+   </children>
+</Pane>
