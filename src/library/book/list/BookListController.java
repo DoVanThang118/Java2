@@ -2,10 +2,14 @@ package library.book.list;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import library.Main;
 import library.entities.Book;
 
 import java.net.URL;
@@ -59,5 +63,17 @@ public class BookListController implements Initializable {
         }finally {
             tbBooks.setItems(ls);
         }
+    }
+
+    public void backToHome() throws Exception {
+        Parent menu = FXMLLoader.load(getClass().getResource("../../home.fxml"));
+        Main.rootStage.setTitle("Menu");
+        Main.rootStage.setScene(new Scene(menu,600,600));
+    }
+
+    public void addToBook() throws Exception {
+        Parent addBook = FXMLLoader.load(getClass().getResource("../form/form.fxml"));
+        Main.rootStage.setTitle("Add Book");
+        Main.rootStage.setScene(new Scene(addBook,600,600));
     }
 }

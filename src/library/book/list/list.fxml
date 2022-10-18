@@ -5,16 +5,16 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.book.list.BookListController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.book.list.BookListController">
     <children>
-        <Text layoutX="254.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books">
+        <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books">
             <font>
-                <Font size="20.0" />
+                <Font size="50.0" />
             </font>
         </Text>
-        <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" text="&lt;&lt; Back" />
-        <Button layoutX="496.0" layoutY="18.0" mnemonicParsing="false" text="Add Book" />
-        <TableView fx:id="tbBooks" layoutX="20.0" layoutY="73.0" prefHeight="315.0" prefWidth="557.0">
+        <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#backToHome" text="Back Menu" />
+        <Button layoutX="517.0" layoutY="561.0" mnemonicParsing="false" onAction="#addToBook" text="Add Book" />
+        <TableView fx:id="tbBooks" layoutX="12.0" layoutY="75.0" prefHeight="474.0" prefWidth="576.0">
             <columns>
                 <TableColumn fx:id="tdId" prefWidth="41.0" text="Id" />
                 <TableColumn fx:id="tdName" prefWidth="217.0" text="Name" />
