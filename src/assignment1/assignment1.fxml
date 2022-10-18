@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane fx:controller="assignment1.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment1.Controller">
    <children>
-      <Button onAction="#book" layoutX="230.0" layoutY="238.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="141.0" text="Quản lý sách " />
-      <Button onAction="#member" layoutX="230.0" layoutY="177.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="141.0" text="Quản lý thành viên " />
-      <Button onAction="#bookmember" layoutX="230.0" layoutY="114.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="141.0" text="Quản lý mượn sách" />
+      <Button layoutX="188.0" layoutY="249.0" mnemonicParsing="false" onAction="#book" prefHeight="69.0" prefWidth="226.0" text="Book ">
+         <font>
+            <Font size="32.0" />
+         </font></Button>
+      <Button layoutX="188.0" layoutY="172.0" mnemonicParsing="false" onAction="#member" prefHeight="69.0" prefWidth="226.0" text="Member">
+         <font>
+            <Font size="32.0" />
+         </font></Button>
+      <Button layoutX="188.0" layoutY="91.0" mnemonicParsing="false" onAction="#bookmember" prefHeight="69.0" prefWidth="226.0" text=" mượn sách">
+         <font>
+            <Font size="32.0" />
+         </font></Button>
    </children>
 </Pane>
