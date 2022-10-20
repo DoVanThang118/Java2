@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.book.edit.BookEditController">
+   <children>
+      <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Book">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#backToList" text="Back List" />
+      <TextField fx:id="txtName" layoutX="78.0" layoutY="125.0" prefHeight="38.0" prefWidth="466.0" promptText="Name" />
+      <TextField fx:id="txtAuthor" layoutX="78.0" layoutY="200.0" prefHeight="38.0" prefWidth="466.0" promptText="Author" />
+      <TextField fx:id="txtQty" layoutX="78.0" layoutY="275.0" prefHeight="38.0" prefWidth="466.0" promptText="Qty" />
+      <Button layoutX="479.0" layoutY="350.0" mnemonicParsing="false" onAction="#updateBook" prefHeight="25.0" prefWidth="65.0" text="Submit" />
+      <Button onAction="#deleteBook" layoutX="78.0" layoutY="350.0" mnemonicParsing="false" text="Delete" />
+   </children>
+</Pane>

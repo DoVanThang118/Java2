@@ -23,12 +23,12 @@ public class StudentCreateController {
         Main.rootStage.setTitle("List Student");
         Main.rootStage.setScene(new Scene(listBook,600,600));
     }
-    public void addStudent() throws Exception {
+    public void addStudent() {
         try {
             String name = txtName.getText();
             String email = txtEmail.getText();
             int tel = Integer.parseInt(txtTel.getText());
-            String sql_txt = "INSERT INTO books(name,email,tel) VALUES (?,?,?)";
+            String sql_txt = "INSERT INTO student(name,email,tel) VALUES (?,?,?)";
             Connector connector = Connector.getInstance();
             ArrayList arr = new ArrayList();
             arr.add(name);

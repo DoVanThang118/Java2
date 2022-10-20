@@ -17,7 +17,7 @@ public class HomeController {
         Main.rootStage.setScene(new Scene(listStudent,600,600));
     }
     public void goToStudentRent() throws Exception {
-        Parent listStudent = FXMLLoader.load(getClass().getResource("rent/rent.fxml"));
+        Parent listStudent = FXMLLoader.load(getClass().getResource("rent/create/create.fxml"));
         Main.rootStage.setTitle("Rental Book");
         Main.rootStage.setScene(new Scene(listStudent,600,600));
     }

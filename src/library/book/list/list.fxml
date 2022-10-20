@@ -20,7 +20,7 @@
                 <TableColumn fx:id="tdName" prefWidth="217.0" text="Name" />
                 <TableColumn fx:id="tdAuthor" prefWidth="142.0" text="Author" />
                 <TableColumn fx:id="tdQty" minWidth="0.0" prefWidth="71.0" text="Qty" />
-                <TableColumn minWidth="0.0" prefWidth="104.0" text="Action" />
+                <TableColumn fx:id="tdEdit" minWidth="0.0" prefWidth="104.0" text="Action" />
             </columns>
         </TableView>
     </children>
