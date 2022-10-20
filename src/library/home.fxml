@@ -5,19 +5,19 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.HomeController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.HomeController">
    <children>
       <Button layoutX="23.0" layoutY="192.0" mnemonicParsing="false" onAction="#goToBookList" prefHeight="87.0" prefWidth="168.0" text="Books">
          <font>
             <Font size="26.0" />
          </font>
       </Button>
-      <Button layoutX="216.0" layoutY="192.0" mnemonicParsing="false" prefHeight="87.0" prefWidth="168.0" text="Students">
+      <Button onAction="#goToStudentList" layoutX="216.0" layoutY="192.0" mnemonicParsing="false" prefHeight="87.0" prefWidth="168.0" text="Students">
          <font>
             <Font size="26.0" />
          </font>
       </Button>
-      <Button layoutX="403.0" layoutY="192.0" mnemonicParsing="false" prefHeight="87.0" prefWidth="168.0" text="Rents">
+      <Button onAction="#goToStudentRent" layoutX="403.0" layoutY="192.0" mnemonicParsing="false" prefHeight="87.0" prefWidth="168.0" text="Rents">
          <font>
             <Font size="26.0" />
          </font>
@@ -27,7 +27,7 @@
             <Font size="73.0" />
          </font>
       </Text>
-      <Text layoutX="499.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="thiết kế bởi WINHO">
+      <Text layoutX="499.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="thiết kế bởi WINHO">
          <font>
             <Font size="10.0" />
          </font>

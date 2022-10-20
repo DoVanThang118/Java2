@@ -11,12 +11,10 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import library.Main;
 import library.entities.Book;
+import library.helper.Connector;
 
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.ResourceBundle;
 
 public class BookListController implements Initializable {
@@ -25,11 +23,6 @@ public class BookListController implements Initializable {
     public TableColumn<Book,String> tdName;
     public TableColumn<Book,String> tdAuthor;
     public TableColumn<Book,Integer> tdQty;
-
-    public final static String connectionString = "jdbc:mysql://localhost:3306/t2203e_library";
-    public final static String user = "root";
-    public final static String pwd = null;
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -44,11 +37,9 @@ public class BookListController implements Initializable {
 
         //lay database
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection(connectionString,user,pwd);
-            Statement statement = connection.createStatement();
             String sql_txt = "select * from books";
-            ResultSet resultSet = statement.executeQuery(sql_txt);
+            Connector connector = Connector.getInstance();
+            ResultSet resultSet = connector.query(sql_txt);
             while (resultSet.next()){
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
@@ -56,7 +47,6 @@ public class BookListController implements Initializable {
                 int qty = resultSet.getInt("qty");
                 Book book = new Book(id,name,author,qty);
                 ls.add(book);
-
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
@@ -72,7 +62,7 @@ public class BookListController implements Initializable {
     }
 
     public void addToBook() throws Exception {
-        Parent addBook = FXMLLoader.load(getClass().getResource("../form/form.fxml"));
+        Parent addBook = FXMLLoader.load(getClass().getResource("../create/create.fxml"));
         Main.rootStage.setTitle("Add Book");
         Main.rootStage.setScene(new Scene(addBook,600,600));
     }

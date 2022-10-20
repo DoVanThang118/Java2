@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.book.list.BookListController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.student.list.StudentListController">
     <children>
         <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books">
             <font>
@@ -13,13 +13,13 @@
             </font>
         </Text>
         <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#backToHome" text="Back Menu" />
-        <Button layoutX="517.0" layoutY="561.0" mnemonicParsing="false" onAction="#addToBook" text="Add Book" />
-        <TableView fx:id="tbBooks" layoutX="12.0" layoutY="75.0" prefHeight="474.0" prefWidth="576.0">
+        <Button layoutX="517.0" layoutY="561.0" mnemonicParsing="false" onAction="#addToStudent" text="Add Student" />
+        <TableView fx:id="tbStudents" layoutX="12.0" layoutY="75.0" prefHeight="474.0" prefWidth="576.0">
             <columns>
                 <TableColumn fx:id="tdId" prefWidth="41.0" text="Id" />
                 <TableColumn fx:id="tdName" prefWidth="217.0" text="Name" />
-                <TableColumn fx:id="tdAuthor" prefWidth="142.0" text="Author" />
-                <TableColumn fx:id="tdQty" minWidth="0.0" prefWidth="71.0" text="Qty" />
+                <TableColumn fx:id="tdEmail" prefWidth="142.0" text="Email" />
+                <TableColumn fx:id="tdTel" minWidth="0.0" prefWidth="71.0" text="Tel" />
                 <TableColumn minWidth="0.0" prefWidth="104.0" text="Action" />
             </columns>
         </TableView>
